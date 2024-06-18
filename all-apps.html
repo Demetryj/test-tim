@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/all-apps.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html"
+          ><img src="./images/svg/tikamori-title.svg" alt="Logo" width="158" height="56"
+        /></a>
+
+        <nav class="navigation header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item current">
+              <a class="navigation__item-link current" href="./all-apps.html">All apps</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__item-link" href="./terms.html">Terms</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__item-link" href="./privacy.html">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Button to open the mobile menu-->
+        <button class="burger-menu-button" type="button" data-menu-button>
+          <svg
+            class="burger-menu-button__icon"
+            width="30"
+            height="30"
+            aria-label="Icon for opening the mobile menu"
+          >
+            <use href="./images/svg/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+
+        <!--Mobile menu-->
+        <div class="backdrop-mobile-menu" data-backdrop-menu>
+          <div class="mobile-menu" data-menu>
+            <button class="burger-menu-button close-menu" type="button" data-close-menu-button>
+              <svg
+                class="burger-menu-button__icon"
+                width="30"
+                height="30"
+                aria-label="Icon for closing the mobile menu"
+              >
+                <use href="./images/svg/symbol-defs.svg#close"></use>
+              </svg>
+            </button>
+
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item current">
+                  <a class="navigation__item-link current" href="./all-apps.html">All apps</a>
+                </li>
+
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="./terms.html">Terms</a>
+                </li>
+
+                <li class="navigation__item">
+                  <a class="navigation__item-link" href="./privacy.html">Privacy</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="contact-info">
+              <a href="mailto:example@mail.com" class="mobile-menu__email">example@mail.com</a>
+              <span class="mobile-menu__rights"><span>&copy </span>Tikamori 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="apps">
+        <div class="container">
+          <h1 class="apps__title">All apps</h1>
+
+          <ul class="cardset">
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper first"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper first"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper second"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper third"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper fourth"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper sixth"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper seventh"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper eighth"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper ninth"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper tenth"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper eleventh"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper twelfth"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+
+            <li class="cardset-item">
+              <a
+                class="cardset-item__link"
+                href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <div class="cardset-item__image-wrapper thirteenth"></div>
+
+                <div class="cardset-item__info">
+                  <h2 class="cardset-item__title">PatPaw</h2>
+                  <p class="cardset-item__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, incidunt?
+                  </p>
+
+                  <button class="cards-item__button" type="button">Dawnload</button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <address class="footer__address">
+          <div class="socials">
+            <a
+              href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+              class="socials__link"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><svg class="socials__icon" width="25" height="25" aria-label="Facebook">
+                <use href="./images/svg/symbol-defs.svg#facebook"></use></svg
+            ></a>
+
+            <a
+              href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+              class="socials__link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="socials__icon" width="25" height="25" aria-label="Apple">
+                <use href="./images/svg/symbol-defs.svg#apple"></use>
+              </svg>
+            </a>
+
+            <a
+              href="https://play.google.com/store/apps/dev?id=7691759152524707707"
+              class="socials__link"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="socialsn__icon" width="25" height="25" aria-label="Google Play">
+                <use href="./images/svg/symbol-defs.svg#play"></use>
+              </svg>
+            </a>
+          </div>
+
+          <a href="mailto:example@mail.com" class="footer__email">example@mail.com</a>
+
+          <span class="footer__rights"><span>&copy </span>Tikamori 2024</span>
+        </address>
+      </div>
+    </footer>
+
+    <script src="./js/toggle-mobile-menu.js" defer></script>
+  </body>
+</html>
