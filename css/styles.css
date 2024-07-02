@@ -280,7 +280,7 @@ p {
 /*-----Navigation menu-----*/
 
 .header__navigation {
-  @media screen and (max-width: 1023.9px) {
+  @media screen and (max-width: 1023px) {
     display: none;
   }
 }
